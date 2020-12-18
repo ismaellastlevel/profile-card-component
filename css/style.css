@@ -1,0 +1,111 @@
+html {
+    height: 100%;
+}
+
+body {
+    /*reset css*/
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    height: 100%;
+    color: #444;;
+    background: url("../images/bg-pattern-top.svg") right 49vw bottom 40vh no-repeat, url("../images/bg-pattern-bottom.svg") left 50vw top 49vh no-repeat;
+    background-color: hsl(185, 75%, 39%);
+
+    /*!*background-image: url('../images/bg-pattern-top.svg'),url('../images/bg-pattern-bottom.svg');*!*/
+    /*background-position: top left,bottom right;*/
+    /*background-repeat: no-repeat no-repeat;*/
+
+}
+
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    overflow: hidden;
+    border-radius: 8px 8px 8px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.card-middle, .card-top {
+    flex: 2;
+}
+
+.card-footer {
+    flex: 1;
+    padding: 10px;
+    border-top: 1px solid hsl(0, 0%, 59%);
+}
+
+.card-top img {
+    width: 100%;
+    height: auto;
+}
+
+.card-middle img {
+    position: relative;
+    top: -55px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.card-middle .user_presentation {
+    position: relative;
+    top: -40px;
+}
+
+.card-middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user_presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.user_infos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.user_infos_details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user_followers_number, .user_likes_number, .user_photos_number, .user_name {
+    font-weight: 700;
+}
+
+.user_followers_label, .user_likes_label, .user_photos_label {
+    font-size: 10px;
+    color: hsl(0, 0%, 59%);
+}
+
+.user_age, .user_location {
+    font-size: 15px;
+    color: hsl(0, 0%, 59%);
+}
+
